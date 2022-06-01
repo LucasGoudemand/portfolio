@@ -1,0 +1,280 @@
+
+@font-face {
+    font-family: 'another_typewriterregular';
+    src: url('fontes/atwriter-webfont.woff2') format('woff2'),
+         url('fontes/atwriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+  background: url("images/backgroundbali.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.bloc_page {
+  display: flex;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60em;
+}
+
+/*TITRE EFFET TYPEWRITING-----------------------------------------------------------------------------------------------------*/
+
+.line-1 {
+  position: relative;
+  font-family: another_typewriterregular;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  border-right: 2px solid;
+  color: white;
+  font-size: 180%;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(50%);
+}
+
+.line1typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 200ms steps(44) normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: none;
+  }
+  to {
+    border-rigth-color: transparent;
+  }
+}
+
+/* BOUTON START-----------------------------------------------------------------------------------------------------------------*/
+
+.boutton {
+  display: flex;
+  text-shadow: white 0.1em 0.1em 0.2em;
+  margin: 50px;
+}
+
+.btn {
+  position: relative;
+  padding: 20px 50px;
+}
+
+.btn-1 {
+  color: #000;
+}
+
+.btn-1::after,
+.btn-1::before {
+  border: 2px solid #000;
+  content: "";
+  position: absolute;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.1 ease;
+}
+
+.btn-1:hover::after {
+  transform: translate(-5px, -5px);
+}
+
+.btn-1:hover::before {
+  transform: translate(5px, 5px);
+}
+    
+
+/*ARTICLE A PROPOS DE MOI------------------------------------------------------------------------------------------------------------*/
+
+
+#article_principal {
+    background-color: rgb( 209 , 230 , 209);
+    height: 70em;
+    margin-top: 5em;
+    display: flex;
+
+    
+}
+
+#contenu_article_principale {
+    
+    width: 30em;
+    color: white;
+    
+}
+
+#contenu_article_principale h1 {
+    font-family: another_typewriterregular;
+    font-size: 3em;
+    margin-left: 1em;
+    margin-top: 4em;
+}
+
+#contenu_article_principale p {
+
+    margin-left: 6em;
+    margin-top: 1em;
+
+}
+
+#contenu_article_passion {
+    
+    width: 42em;
+    color: white;
+    
+}
+
+#contenu_article_passion h1 {
+    font-family: another_typewriterregular;
+    font-size: 3em;
+    margin-left: 5em;
+    margin-top: 4em;
+}
+
+#contenu_article_passion p {
+
+    font-size: 1em;
+    margin-left: 19em;
+    margin-top: 1em;
+}
+
+.photomoi img {
+
+    height: 100%;
+    width: 45em;  
+}
+
+/* ARTICLE MES SKILLS-------------------------------------------------------------------------------------------------------*/
+
+#article_secondaire { /*PREMIER FLEXBOX*/
+
+    background-color: rgb(230 , 255 , 230);
+    height: 40em;
+    display: flex;
+    color: white;
+    padding-left: 12em;
+    padding-top: 10em;
+
+    
+}
+
+.titre_skillz { /*alignement du titre au milieu*/
+
+    margin-top: 5.5em;
+    margin-left: 4em;
+
+
+}
+
+.skillz1 {     /*SECOND FLEXBOX*/
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+.langues {   /*TROISIEME FLEXBOX*/
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 4em;
+}
+
+.container {
+    background-color: rgb(192, 192, 192);
+    width: 20em;
+    border-radius: 15px;
+    height: 1em;
+    text-align: center;
+    margin-left: 70px;
+    
+    margin-top: 3em;
+    font-size: 1em;
+}
+  
+.skill {
+        background-color: rgb( 89 , 133 , 70);
+        color: white;
+        height: 1em;
+        text-align: center;
+        border-radius: 15px;
+}
+.titre_skillz {
+
+    color: rgb( 89 , 133 , 70)
+}
+        
+
+  
+    .html {
+        width: 60%;
+    }
+  
+    .css {
+        width: 50%;
+    }
+    .scripting {
+        width: 60%;
+    }
+  
+    .sql {
+        width: 60%;
+    }
+
+    .linux {
+        width: 80%;
+    }
+  
+    .windows {
+        width: 90%;
+    }
+    .virtualisation {
+        width: 80%;
+    }
+
+    .anglais {
+        width: 95%;
+    }
+
+    .curiosite {
+        width: 150%;
+    }
+  
+    .motivation {
+        width: 200%;
+    }
+    .gestiondutps {
+        width: 90%;
+    }
+  
+
+/*PARCOUR PRO----------------------------------------------------------------------------------*/
+
+.parcour { /*PREMIER FLEXBOX*/
+
+    background-color: rgb( 158 , 194 , 124);
+    height: 40em;
+    display: flex;
+    color: white;
