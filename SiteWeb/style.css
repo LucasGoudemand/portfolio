@@ -10,7 +10,7 @@
 
 
 body {
-  background: url("images/backgroundbali.jpeg");
+  background: url("images/backgroundbali.png");
   background-size: cover;
   background-attachment: fixed;
   font-family: sans-serif;
@@ -28,6 +28,22 @@ header {
   align-items: center;
   flex-direction: column;
   height: 60em;
+}
+
+/* ¨PAGE D'ACCEUILLE  ---------------------------------------------------------------------------------------------------------*/
+.pagePrincipal { 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icones {
+
+    display: flex;
+    padding-top: 10em;
 }
 
 /*TITRE EFFET TYPEWRITING-----------------------------------------------------------------------------------------------------*/
@@ -73,6 +89,7 @@ header {
   display: flex;
   text-shadow: white 0.1em 0.1em 0.2em;
   margin: 50px;
+
 }
 
 .btn {
@@ -82,11 +99,15 @@ header {
 
 .btn-1 {
   color: #000;
+  text-decoration: none;
+  
+
 }
 
 .btn-1::after,
 .btn-1::before {
-  border: 2px solid #000;
+  border: 2px solid black;
+  border-radius: 20px;
   content: "";
   position: absolute;
   width: calc(100% - 4px);
@@ -110,60 +131,69 @@ header {
 
 
 #article_principal {
-    background-color: rgb( 209 , 230 , 209);
+    background-color: #adc178;
     height: 70em;
     margin-top: 5em;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
 
     
 }
 
 #contenu_article_principale {
     
-    width: 30em;
-    color: white;
+    width: 23em;
+    height: 55em;
+    color: #fefae0;
+    margin-left: 5em;
+    margin-top: 5em;
+
+    
+    
     
 }
 
 #contenu_article_principale h1 {
     font-family: another_typewriterregular;
     font-size: 3em;
-    margin-left: 1em;
-    margin-top: 4em;
+    
 }
 
 #contenu_article_principale p {
 
-    margin-left: 6em;
-    margin-top: 1em;
+    
 
 }
 
 #contenu_article_passion {
     
-    width: 42em;
-    color: white;
+    width: 23em;
+    height: 55em;
+    color: #fefae0;
+    margin-left: 5em;
+    margin-top: 5em;
     
 }
 
 #contenu_article_passion h1 {
     font-family: another_typewriterregular;
     font-size: 3em;
-    margin-left: 5em;
-    margin-top: 4em;
+    
 }
 
 #contenu_article_passion p {
 
-    font-size: 1em;
-    margin-left: 19em;
-    margin-top: 1em;
+    
 }
 
 .photomoi img {
 
-    height: 100%;
-    width: 45em;  
+    height: 75%;
+    width: 35em;
+    
+
 }
 
 /* ARTICLE MES SKILLS-------------------------------------------------------------------------------------------------------*/
@@ -173,9 +203,13 @@ header {
     background-color: rgb(230 , 255 , 230);
     height: 40em;
     display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding-left: 12em;
+
+   /* padding-left: 12em;
     padding-top: 10em;
+    border-radius: 8px;*/
 
     
 }
@@ -186,20 +220,35 @@ header {
     margin-left: 4em;
 
 
+
 }
 
 .skillz1 {     /*SECOND FLEXBOX*/
 
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
+    margin-right: 5em;
+   
+}
+
+.skillz1 h1 {
+
+    color: DarkOrange;
 }
 
 .langues {   /*TROISIEME FLEXBOX*/
 
     display: flex;
     flex-direction: column;
-    margin-left: 4em;
+    margin-bottom: 25em;
+    padding-top: 13em;
+
+
+}
+
+.langues h1 {
+
+    color: DarkOrange;
 }
 
 .container {
@@ -235,8 +284,8 @@ header {
     .css {
         width: 50%;
     }
-    .scripting {
-        width: 60%;
+    .javascript {
+        width: 40%;
     }
   
     .sql {
@@ -255,15 +304,15 @@ header {
     }
 
     .anglais {
-        width: 95%;
+        width: 99%;
     }
 
     .curiosite {
-        width: 150%;
+        width: 100%;
     }
   
     .motivation {
-        width: 200%;
+        width: 100%;
     }
     .gestiondutps {
         width: 90%;
@@ -275,6 +324,18 @@ header {
 .parcour { /*PREMIER FLEXBOX*/
 
     background-color: rgb( 158 , 194 , 124);
-    height: 40em;
+    height: 45em;
     display: flex;
+    flex-direction: column;
     color: white;
+}
+
+.expProf {
+
+    display: flex;
+}
+
+.expEduc {
+
+    display: flex;
+}
